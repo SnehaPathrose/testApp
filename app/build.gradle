@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'maven-publish'
 
 repositories {
     maven {
@@ -33,6 +34,16 @@ android {
 allprojects {
     group = 'com.criteo.mediation.google'
     version = '1.0'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.criteo.mediation.google'
+            artifactId = 'google-adapters'
+            version = '1.0'
+        }
+    }
 }
 
 dependencies {
