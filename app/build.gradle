@@ -30,6 +30,11 @@ android {
     }
 }
 
+allprojects {
+    group = 'com.criteo.mediation.google'
+    version = '1.0'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
