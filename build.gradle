@@ -19,6 +19,8 @@ allprojects {
         jcenter()
         
     }
+    group = 'com.criteo.mediation.google'
+    version = '1.0'
 }
 
 task clean(type: Delete) {
